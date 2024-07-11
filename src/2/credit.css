@@ -1,0 +1,6 @@
+#textbox {
+}
+#btn {
+  display: flex;
+  justify-content: right;
+}
