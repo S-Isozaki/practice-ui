@@ -6,6 +6,7 @@ function Home() {
     <>
       <Link to={`/signup`}>Day1 Sign up</Link>
       <Link to={`/credit`}>Day2 Credit card Checkout</Link>
+      <Link to={`/landing`}>Day3 Landing Page</Link>
     </>
   )
 }

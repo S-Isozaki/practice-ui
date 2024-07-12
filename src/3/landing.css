@@ -1,0 +1,8 @@
+img {
+  width: 300px;
+}
+
+#links {
+  display: flex;
+  flex-flow: column;
+}
