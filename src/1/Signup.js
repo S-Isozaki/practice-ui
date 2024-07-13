@@ -1,4 +1,4 @@
-// import * as css from "./signup.css";
+import * as css from "./signup.css";
 
 function Signup() {
   return (

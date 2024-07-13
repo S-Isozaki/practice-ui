@@ -4,6 +4,7 @@ import Home from "./Home";
 import Signup from "./1/Signup";
 import CreditCardCheckout from "./2/CreditCardCheckout";
 import Landing from "./3/landing";
+import Calculation from "./4/calculation";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path={`/signup`} element={<Signup />} />
           <Route path={`/credit`} element={<CreditCardCheckout />} />
           <Route path={`/landing`} element={<Landing />} />
+          <Route path={`/calculation`} element={<Calculation />} />
         </Routes>
       </BrowserRouter>
     </>

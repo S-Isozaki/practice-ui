@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return(
-    <>
-      <Link to={`/signup`}>Day1 Sign up</Link>
-      <Link to={`/credit`}>Day2 Credit card Checkout</Link>
+    <div id="linktosnippet">
+      <Link to={`/calculation`}>Day4 Calculation</Link>
       <Link to={`/landing`}>Day3 Landing Page</Link>
-    </>
+      <Link to={`/credit`}>Day2 Credit card Checkout</Link>
+      <Link to={`/signup`}>Day1 Sign up</Link>
+    </div>
   )
 }
 

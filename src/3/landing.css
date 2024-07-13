@@ -2,6 +2,14 @@ img {
   width: 300px;
 }
 
+#landing {
+  display: flex;
+  flex-flow: row;
+}
+
+h1 {
+  font-size: 24px;
+}
 #links {
   display: flex;
   flex-flow: column;
