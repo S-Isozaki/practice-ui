@@ -1,4 +1,4 @@
-import * as css from "./landing.css";
+// import * as css from "./landing.css";
 
 export default function Landing () {
   return (

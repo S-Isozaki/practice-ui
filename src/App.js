@@ -5,6 +5,7 @@ import Signup from "./1/Signup";
 import CreditCardCheckout from "./2/CreditCardCheckout";
 import Landing from "./3/landing";
 import Calculation from "./4/calculation";
+import Color from "./5/color";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path={`/credit`} element={<CreditCardCheckout />} />
           <Route path={`/landing`} element={<Landing />} />
           <Route path={`/calculation`} element={<Calculation />} />
+          <Route path={`/color`} element={<Color />} />
         </Routes>
       </BrowserRouter>
     </>

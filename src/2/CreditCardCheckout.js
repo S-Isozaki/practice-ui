@@ -1,4 +1,4 @@
-import * as css from "./credit.css";
+// import * as css from "./credit.css";
 
 function CreditCardCheckout() {
   return (
