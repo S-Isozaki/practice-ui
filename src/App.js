@@ -6,6 +6,7 @@ import CreditCardCheckout from "./2/CreditCardCheckout";
 import Landing from "./3/landing";
 import Calculation from "./4/calculation";
 import Color from "./5/color";
+import Profile from "./6/profile";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path={`/landing`} element={<Landing />} />
           <Route path={`/calculation`} element={<Calculation />} />
           <Route path={`/color`} element={<Color />} />
+          <Route path={`/profile`} element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>

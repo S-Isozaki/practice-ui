@@ -41,6 +41,10 @@ const config = {
                     }
                 ],
             },
+            {
+                test: /\.svg$/i,
+                loader: "file-loader"
+            }
         ],
     },
 };
