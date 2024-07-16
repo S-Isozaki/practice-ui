@@ -1,6 +1,27 @@
 // import * as css from "./color.css";
 
 import { useEffect, useRef } from "react";
+import styled from "styled-components";
+
+const WrapColor = styled.div`
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+  #colorgame {
+    width: 100%;
+    height: 100%;
+  }
+  #colorcanvas {
+    width: 500px;
+    height: 300px;
+  }
+  #canvas {
+    border: 2px solid black;
+    box-sizing: border-box;
+    background-color: white;
+  }
+`;
 
 export default function Color () {
   function getRandomInt (max) {

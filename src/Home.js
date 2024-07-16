@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return(
     <div id="linktosnippet">
+      <Link to={`/settings`}>Day7 Settings</Link>
       <Link to={`/profile`}>Day6 User Profile</Link>
       <Link to={`/color`}>Day5</Link>
       <Link to={`/calculation`}>Day4 Calculation</Link>

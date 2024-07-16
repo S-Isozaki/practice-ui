@@ -1,6 +1,118 @@
 // import * as css from "./calculation.css";
-import { useState } from "react";
+import styled from "styled-components";
 
+const WrapCalculation = styled.div`
+  .calculator {
+    width: 450px;
+    height: 700px;
+    background-color: gray;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    border-radius: 20px;
+  }
+
+  .display {
+    margin: 0 auto;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+  }
+
+  .numeric {
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  .button-container {
+    width: 310px;
+    height: 390px;
+    margin: 0 auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 10px;
+  }
+
+  button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid 2px black;
+    font-size: large;
+  }
+
+  .number {
+    background-color: orange;
+  }
+  .symbol {
+    background-color: black;
+    color: white;
+  }
+  .seven {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .eight {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .nine {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .four {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .six {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .zero {
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+  .divide {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .multiple {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .minus {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .plus {
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .equal {
+    grid-column: 4;
+    grid-row: 5;
+  }
+`;
 export default function Calculation () {
   return (
     <div className="calculator">
