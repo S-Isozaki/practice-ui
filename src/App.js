@@ -8,6 +8,7 @@ import Calculation from "./4/calculation";
 import Color from "./5/color";
 import Profile from "./6/profile";
 import Settings from "./7/setting";
+import NotFound from "./8/404";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path={`/color`} element={<Color />} />
           <Route path={`/profile`} element={<Profile />} />
           <Route path={`/settings`} element={<Settings />} />
+          <Route path={`/notfound`} element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>

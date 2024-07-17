@@ -8,16 +8,24 @@ const WrapSignup = styled.div`
   }
 
   #form {
+    width: 500px;
+    height: 700px;
+    background: white;
+    border: 1px solid;
+    box-shadow: 3px 3px 3px gray;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
-    width: 500px;
-    height: 700px;
+    text-align: center;
     top: 50px;
-    border: 2px solid;
-    border-radius: 10px;
   }
-
+  #heading {
+    background: rgb(0,255,255);
+    height: 75px;
+  }
+  h2 {
+    margin-top: 20px;
+  }
   #textbox {
     display: flex;
     flex-flow: column;
@@ -28,7 +36,9 @@ const WrapSignup = styled.div`
     width: 250px;
     margin: 20px auto;
   }
-
+  fieldset {
+    border: none;
+  }
   button {
     width: 50px;
     height: 30px;
@@ -44,9 +54,18 @@ function Signup() {
   return (
     <WrapSignup>
       <form id="form">
+        <div id="heading">
+          <h2>Sign Up</h2>
+        </div>
         <div id="textbox">
-          <input name="name" placeholder="enter your name" />
-          <input name="email" placeholder="enter your e-mail address" />
+          <fieldset>
+            <label>name</label>
+            <input name="name" placeholder="enter your name" />
+          </fieldset>
+          <fieldset>
+            <label>email</label>
+            <input name="email" placeholder="enter your e-mail address" />
+          </fieldset>
         </div>
         <div id="btn">
           <button type="submit">submit</button>
