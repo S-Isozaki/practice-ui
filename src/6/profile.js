@@ -1,6 +1,6 @@
-// import * as css from "./profile.css";
 import styled from "styled-components";
 import img from "../5/icon.svg";
+import { useEffect } from "react";
 
 const ProfileContainer = styled.div`
   padding: 20px;
@@ -13,12 +13,11 @@ const ProfileContainer = styled.div`
     box-shadow: 5px 5px 5px gray;
     margin: 0 auto;
   }
-
   h1 {
     text-align: center;
     top: 20px;
   }
-
+    
   #user {
     text-align: center;
   }
@@ -38,9 +37,27 @@ const ProfileContainer = styled.div`
   ul {
     list-style-position: inside;
   }
+  @media (max-width: 700px) {
+    #profile {
+      margin-top: 0;
+      border: none;
+      width: 100%;
+      box-shadow: none;
+      background: none;
+    }
+    #information {
+      flex-flow: column;
+    }
+    h2 {
+      font-size: 22px;
+    }
+  }
 `;
 
 const Profile = () => {
+  useEffect(() => {
+    document.title = "Profile";
+  }, []);
   return (
     <ProfileContainer>
       <div id="profile">

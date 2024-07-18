@@ -1,4 +1,3 @@
-// import * as css from "./style.css"
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -22,8 +21,12 @@ const WrapHome = styled.div`
     height: 100%;
     background: linear-gradient(40deg, white, rgba(0, 255, 255, 0.75));
   }
-
+  margin-top: 5px;
+  a {
+    width: max-content;
+  }
   #linktosnippet {
+    margin-top: 20px;
     display: flex;
     flex-flow: column;
   }
@@ -32,7 +35,9 @@ const WrapHome = styled.div`
 function Home() {
   return(
     <WrapHome>
+      <h1>Daily UI Training</h1>
       <div id="linktosnippet">
+        <Link to={`/musicplayer`}>Day9 Music Player</Link>
         <Link to={`/notfound`}>Day8 404</Link>
         <Link to={`/settings`}>Day7 Settings</Link>
         <Link to={`/profile`}>Day6 User Profile</Link>

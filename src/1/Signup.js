@@ -1,4 +1,5 @@
 // import * as css from "./signup.css";
+import { useEffect } from "react";
 import styled from "styled-components";
 
 const WrapSignup = styled.div`
@@ -6,10 +7,10 @@ const WrapSignup = styled.div`
     margin: 0;
     padding: 0;
   }
-
+  margin-top: 50px;
   #form {
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 500px;
     background: white;
     border: 1px solid;
     box-shadow: 3px 3px 3px gray;
@@ -17,10 +18,16 @@ const WrapSignup = styled.div`
     display: flex;
     flex-flow: column;
     text-align: center;
-    top: 50px;
+  }
+  @media (max-width: 400px) {
+    margin-top: 0;
+    #form {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
   }
   #heading {
-    background: rgb(0,255,255);
     height: 75px;
   }
   h2 {
@@ -40,17 +47,24 @@ const WrapSignup = styled.div`
     border: none;
   }
   button {
-    width: 50px;
+    width: 80%;
     height: 30px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(white, black);
   }
   #btn {
+    margin-top: 40px;
     display: flex;
-    justify-content: right;
-    margin-right: 20px;
+    justify-content: center;
   }
 `
 
 function Signup() {
+  useEffect(() => {
+    document.title = "Sign Up"
+  }, [])
   return (
     <WrapSignup>
       <form id="form">
@@ -59,11 +73,11 @@ function Signup() {
         </div>
         <div id="textbox">
           <fieldset>
-            <label>name</label>
+            <label>name:</label>
             <input name="name" placeholder="enter your name" />
           </fieldset>
           <fieldset>
-            <label>email</label>
+            <label>email:</label>
             <input name="email" placeholder="enter your e-mail address" />
           </fieldset>
         </div>

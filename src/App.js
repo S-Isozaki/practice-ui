@@ -9,6 +9,7 @@ import Color from "./5/color";
 import Profile from "./6/profile";
 import Settings from "./7/setting";
 import NotFound from "./8/404";
+import MusicPlayer from "./9/MusicPlayer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path={`/profile`} element={<Profile />} />
           <Route path={`/settings`} element={<Settings />} />
           <Route path={`/notfound`} element={<NotFound />} />
+          <Route path={`/musicplayer`} element={<MusicPlayer />} />
         </Routes>
       </BrowserRouter>
     </>
