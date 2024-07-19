@@ -1,0 +1,5 @@
+<svg version="1.1" width="100" height="30" xmlns="http://www.w3.org/svg/2000">
+	<rect width="100%" height="100%" rx="5" fill="rgb(0,255,255)" />
+	<image x="5" y="0" width="30" height="30" href="../5/icon.svg" />
+	<text x="37.5" y="22.5" font-size="20" text-anchor="start" fill="white">Share</text>
+</svg>

@@ -10,6 +10,7 @@ import Profile from "./6/profile";
 import Settings from "./7/setting";
 import NotFound from "./8/404";
 import MusicPlayer from "./9/MusicPlayer";
+import SocialShare from "./10/SocialShare";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path={`/settings`} element={<Settings />} />
           <Route path={`/notfound`} element={<NotFound />} />
           <Route path={`/musicplayer`} element={<MusicPlayer />} />
+          <Route path={`/share`} element={<SocialShare />} />
         </Routes>
       </BrowserRouter>
     </>
