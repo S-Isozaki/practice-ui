@@ -11,6 +11,7 @@ import Settings from "./7/setting";
 import NotFound from "./8/404";
 import MusicPlayer from "./9/MusicPlayer";
 import SocialShare from "./10/SocialShare";
+import FlashMessage from "./11/FlashMessage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path={`/notfound`} element={<NotFound />} />
           <Route path={`/musicplayer`} element={<MusicPlayer />} />
           <Route path={`/share`} element={<SocialShare />} />
+          <Route path={`/accepted`} element={<FlashMessage />} />
         </Routes>
       </BrowserRouter>
     </>
