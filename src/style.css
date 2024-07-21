@@ -7,7 +7,14 @@
   font-family: 'RobotoMono';
   src: url(./fonts/RobotoMono-VariableFont_wght.ttf);
 }
-
+@font-face {
+  font-family: 'Quicksand';
+  src: url(./fonts/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'NotoSerifJP';
+  src: url(./fonts/NotoSerifJP-VariableFont_wght.ttf);
+}
 html {
   height: 100%;
   font-family: 'RobotoMono';

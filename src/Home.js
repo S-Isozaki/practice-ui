@@ -37,6 +37,7 @@ function Home() {
     <WrapHome>
       <h1>Daily UI Training</h1>
       <div id="linktosnippet">
+        <Link to={`/ecommerce`}>Day12 E-Commerce</Link>
         <Link to={`/accepted`}>Day11 Flash Message</Link>
         <Link to={`/share`}>Day10 Social Share</Link>
         <Link to={`/musicplayer`}>Day9 Music Player</Link>

@@ -12,6 +12,7 @@ import NotFound from "./8/404";
 import MusicPlayer from "./9/MusicPlayer";
 import SocialShare from "./10/SocialShare";
 import FlashMessage from "./11/FlashMessage";
+import ECommerce from "./12/ECommerce";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path={`/musicplayer`} element={<MusicPlayer />} />
           <Route path={`/share`} element={<SocialShare />} />
           <Route path={`/accepted`} element={<FlashMessage />} />
+          <Route path={`/ecommerce`} element={<ECommerce />} />
         </Routes>
       </BrowserRouter>
     </>
