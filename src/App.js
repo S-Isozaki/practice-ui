@@ -13,6 +13,7 @@ import MusicPlayer from "./9/MusicPlayer";
 import SocialShare from "./10/SocialShare";
 import FlashMessage from "./11/FlashMessage";
 import ECommerce from "./12/ECommerce";
+import DirectMessage from "./13/DirectMessage";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path={`/share`} element={<SocialShare />} />
           <Route path={`/accepted`} element={<FlashMessage />} />
           <Route path={`/ecommerce`} element={<ECommerce />} />
+          <Route path={`/directmessage`} element={<DirectMessage />} />
         </Routes>
       </BrowserRouter>
     </>
