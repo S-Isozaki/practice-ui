@@ -14,6 +14,7 @@ import SocialShare from "./10/SocialShare";
 import FlashMessage from "./11/FlashMessage";
 import ECommerce from "./12/ECommerce";
 import DirectMessage from "./13/DirectMessage";
+import CountdownTimer from "./14/CountdownTimer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path={`/accepted`} element={<FlashMessage />} />
           <Route path={`/ecommerce`} element={<ECommerce />} />
           <Route path={`/directmessage`} element={<DirectMessage />} />
+          <Route path={`countdowntimer`} element={<CountdownTimer />} />
         </Routes>
       </BrowserRouter>
     </>
