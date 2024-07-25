@@ -37,6 +37,7 @@ function Home() {
     <WrapHome>
       <h1>Daily UI Training</h1>
       <div id="linktosnippet">
+        <Link to={`/popupoverlay`}>Day16 Pop-up Overlay</Link>
         <Link to={`/countdowntimer`}>Day14 Countdown Timer</Link>
         <Link to={`/directmessage`}>Day13 Direct Message</Link>
         <Link to={`/ecommerce`}>Day12 E-Commerce</Link>
