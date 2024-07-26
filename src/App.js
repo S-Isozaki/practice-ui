@@ -16,6 +16,7 @@ import ECommerce from "./12/ECommerce";
 import DirectMessage from "./13/DirectMessage";
 import CountdownTimer from "./14/CountdownTimer";
 import PpUpOverlay from "./16/PopUpOverlay";
+import PurchaseReceipt from "./17/PurchaseReceipt";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path={`/directmessage`} element={<DirectMessage />} />
           <Route path={`/countdowntimer`} element={<CountdownTimer />} />
           <Route path={`/popupoverlay`} element={<PpUpOverlay />} />
+          <Route path={`/purchasereceipt`} element={<PurchaseReceipt />} />
         </Routes>
       </BrowserRouter>
     </>
